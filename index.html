@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bowman Swordsman Horseman</title>
+<link rel="stylesheet" type="text/css" href="styleGame.css">
+</head>
+<body>
+
+<div class="background-container">
+    <!-- Background image container -->
+</div>
+
+<div class="game-container">
+    <!-- Game content goes here -->
+    <h1 style="color:#A9A9A9"<>Welcome General, your army stands ready! </h1>
+
+    <div id="gameContainer">
+        <label for="armyChoice">Choose your army to command:</label>
+        <input type="text" id="armyChoice" name="armyChoice" placeholder="Bowman, Swordsman, or Horseman">
+        <button onclick="startBattle()">Start Battle</button>
+        <div id="battleResult"></div>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+</div>
+
+<script src="scriptGame.js"></script>
+
+</body>
+</html>
