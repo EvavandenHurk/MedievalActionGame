@@ -1,9 +1,8 @@
-.body {
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
     background-color: #cccccc;
-	
 }
 
 .background-container {
@@ -16,7 +15,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-	
 }
 
 .game-container {
@@ -34,22 +32,48 @@
 
 #gameContainer {
     color: #A9A9A9;
+    text-align: center;
+    width: 80%;
+    max-width: 600px; /* Maximum width for larger screens */
 }
 
 #armyChoice {
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px; /* Maximum width for input */
 }
 
 #battleResult {
-	margin-bottom: 20px;
-	color: #A9A9A9;
+    margin-bottom: 20px;
+    color: #A9A9A9;
 }
 
 #button {
-	margin-top: 20px;
-]
+    margin-top: 20px;
+}
 
 h1 {
     text-align: center;
-	color: #A9A9A9;
+    color: #A9A9A9;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #gameContainer {
+        width: 90%;
+    }
+
+    #armyChoice {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #gameContainer {
+        width: 95%;
+    }
+
+    #armyChoice {
+        max-width: 200px;
+    }
 }
